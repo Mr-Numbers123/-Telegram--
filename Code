@@ -1,0 +1,7 @@
+import telebot
+from telebot import types
+token = 'Ваш токен' 
+# создайте нового бота в botFather в телеграмме , и  введите токен. 
+bot = telebot.TeleBot(token)
+@bot.message_handler(commands=['start'])
+# ( commands=['start']) - команда для запуска Тг-Бота 
